@@ -51,6 +51,20 @@
 ];
 
 
+  export const productData = [
+  {
+    name: 'Jan',
+    "Sales": 4000,
+  },
+  {
+    name: 'Feb',
+    "Sales": 3000,
+  },
+  {
+    name: 'Mar',
+    "Sales": 2500,
+  },
+];
 
 export const userRows = [
   { id: 1, username: 'Elliot Alderson', avatar: "https://assets2.ignimgs.com/2016/08/29/mr-robotjpg-42cabf.jpg",
@@ -99,3 +113,38 @@ export const userRows = [
       transaction:"$120",
     },
 ];
+
+
+export const productRows = [
+  { id: 1, name: 'Manga', img: "https://i.ytimg.com/vi/FDIRYGsg6l0/maxresdefault.jpg",
+      stock: 120,
+      status: "active",
+      price:"$12",
+    },
+  { id: 2, name: 'Anime Hoodies', img: "https://i.etsystatic.com/42119969/r/il/510bc5/4748592312/il_fullxfull.4748592312_nq39.jpg",
+      stock: 150,
+      status: "active",
+      price:"$15",
+    },
+  { id: 3, name: 'Figurines', img: "https://images-cdn.ubuy.co.in/634d15c897202c33c06a7b63-anime-figure-roronoa-zoro-action-figure.jpg",
+      stock: 200,
+      status: "active",
+      price:"$100",
+    },
+  { id: 4, name: 'Wallscrolls', img: "https://images.meesho.com/images/products/271583546/6c5gb_512.webp",
+      stock: 180,
+      status: "active",
+      price:"$11",
+    },
+  { id: 5, name: 'Deskpads', img: "https://i.etsystatic.com/24922469/r/il/8d1430/3347931656/il_794xN.3347931656_bi7r.jpg",
+      stock: 150,
+      status: "active",
+      price:"$20",
+    },
+  { id: 6, name: 'MousePads', img: "https://m.media-amazon.com/images/I/51Hg7v9JvcL.jpg",
+      stock: 160,
+      status: "active",
+      price:"$15",
+    },
+];
+

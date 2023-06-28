@@ -1,5 +1,6 @@
 import { Assessment, CurrencyRupee, LineStyle, LocalMall, Mail, PersonOutline, RateReview, ReportGmailerrorred, Textsms, Timeline, TrendingUp, WorkOutline } from '@mui/icons-material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./sidebar.css"
 
 function Sidebar() {
@@ -9,10 +10,12 @@ function Sidebar() {
       <div className='sidebarMenu'>
         <h3 className='sidebarTitle'>Dashboard</h3>
         <ul className='sidebarList'>
-          <li className='sidebarListItem active'>
-            <LineStyle className='sidebarIcon'/>
-            Home
-          </li>
+            <Link to="/" className='link'>
+              <li className='sidebarListItem active'>
+                <LineStyle className='sidebarIcon'/>
+                Home
+              </li>
+            </Link>
           <li className='sidebarListItem'>
             <Timeline className='sidebarIcon'/>
             Analytics
@@ -26,14 +29,18 @@ function Sidebar() {
       <div className='sidebarMenu'>
         <h3 className='sidebarTitle'>Quick Menu</h3>
         <ul className='sidebarList'>
-          <li className='sidebarListItem'>
-            <PersonOutline className='sidebarIcon'/>
-            Users
-          </li>
-          <li className='sidebarListItem'>
-            <LocalMall className='sidebarIcon'/>
-            Products
-          </li>
+            <Link to="/users" className='link'>
+              <li className='sidebarListItem'>
+                <PersonOutline className='sidebarIcon'/>
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className='link'>
+              <li className='sidebarListItem'>
+                <LocalMall className='sidebarIcon'/>
+                Products
+              </li>
+            </Link>
           <li className='sidebarListItem'>
             <CurrencyRupee className='sidebarIcon'/>
             Transactions
